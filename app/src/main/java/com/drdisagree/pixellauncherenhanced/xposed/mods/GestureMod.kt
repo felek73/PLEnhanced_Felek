@@ -541,7 +541,7 @@ class GestureMod(context: Context) : ModPack(context) {
 
         when (action) {
             GestureAction.NONE -> Unit
-            GestureAction.SLEEP -> runRootCommand("input keyevent 223")
+            GestureAction.SLEEP -> runRootCommand("input keyevent 26")
             GestureAction.NOTIFICATIONS -> expandStatusBar("expandNotificationsPanel", "expand-notifications")
             GestureAction.QUICK_SETTINGS -> expandStatusBar("expandSettingsPanel", "expand-settings")
             GestureAction.RECENTS -> openRecents()
